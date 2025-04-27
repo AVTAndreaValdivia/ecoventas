@@ -5,7 +5,7 @@ import Productos from './pages/Productos';
 import Ventas from './pages/Ventas';
 import Ingresos from './pages/Ingresos';
 import Egresos from './pages/Egresos';
-import Reportes from './pages/Reportes';
+//import Reportes from './pages/Reportes';
 import Facturas from './pages/Facturas';  // Importa el componente de Facturas
 import Home from './pages/Home';
 
@@ -21,7 +21,7 @@ export default function App() {
           <Link to="/ventas">Ventas</Link>
           <Link to="/ingresos">Ingresos</Link>
           <Link to="/egresos">Egresos</Link>
-          <Link to="/reportes">Reportes</Link>
+         {/*  <Link to="/reportes">Reportes</Link>*/}
           <Link to="/facturas">Facturas</Link>  {/* Añadir el enlace para facturas */}
         </nav>
         <Routes>
@@ -34,6 +34,7 @@ export default function App() {
           <Route path="/egresos" element={<Egresos />} />
           <Route path="/reportes" element={<Reportes />} />
           <Route path="/facturas" element={<Facturas />} />  {/* Ruta para facturas */}
+          
         </Routes>
       </div>
     </Router>
